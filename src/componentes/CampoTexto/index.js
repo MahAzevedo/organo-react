@@ -1,8 +1,11 @@
-const CampoTexto = () => {
+import "./CampoTexto.css"
+
+const CampoTexto = (props) => {
+    console.log(props)
     return (
-        <div>
+        <div className="campo-texto">
             <label>Nome</label>
-            <input />
+            <input placeholder="Digite o seu nome" />
         </div>
     )
 }
