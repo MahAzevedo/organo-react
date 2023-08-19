@@ -1,7 +1,7 @@
 import "./CampoTexto.css"
 
 const CampoTexto = (props) => {
-    console.log(props)
+    console.log(props,label)
     return (
         <div className="campo-texto">
             <label>Nome</label>
