@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <Banner />
       <Formulario />
-      <ListaSuspensa itens={times} />
+      <ListaSuspensa />
     </div>
   );
 } 
