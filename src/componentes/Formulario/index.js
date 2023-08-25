@@ -67,3 +67,4 @@ const Formulario = () => {
 export default Formulario;
 
 // botao é um componente, cada campo é um componente
+// react não é JS
