@@ -13,3 +13,5 @@ function App() {
 } 
 
 export default App;
+
+// App JS tá na raíz do projeto
