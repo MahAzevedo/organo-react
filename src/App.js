@@ -53,19 +53,18 @@ function App() {
   return (
     <div className="App">
       <Banner />
-      <Formulario aoColaboradorCadastrado={colaborador => aoNovoColaboradorAdicionado(colaborador)} />
-      <Time nome="Programação"/>
-      <Time nome="Front-End"/>
-      <Time nome="Data Science"/>
-      <Time nome="Devops"/>
-      <Time nome="UX e Design"/>
-      <Time nome="Mobile"/>
-      <Time nome="Inovação e Gestão"/>
+      <Formulario times={times.map(time => time.nome)} aoColaboradorCadastrado={colaborador => aoNovoColaboradorAdicionado(colaborador)} />
+
+      {times.map(time => <Time key={time.nome} nome={time.nome} corPrimaria={time.corPrimaria} corSecundaria={time.corSecundaria}/>)}
+      
     </div>
   );
 } 
 
 export default App;
 
-// App JS tá na raíz do projeto
-// App JS é onde está concentrado os componentes
+// App JS tá na raíz do projeto.
+// App JS é onde está concentrado os componentes.
+
+// Os nomes time, Times, Time, não são palavras reservadas, são somentes nomes para pq
+// no figma é um grupo de funcionários, um time, só por isso, poderia ser outros nomes.
