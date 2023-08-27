@@ -5,6 +5,9 @@ const Colaborador = () => {
         <div>
             <img src='' alt=''/>
         </div>
+        <div>
+            
+        </div>
     )
 }
 
