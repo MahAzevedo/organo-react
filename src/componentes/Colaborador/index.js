@@ -1,14 +1,14 @@
 import './Colaborador.css'
 
-const Colaborador = () => {
+const Colaborador = ({nome, imagem, cargo}) => {
     return (
         <div className='colaborador'>
             <div className='cabecalho'>
-                <img src='https://github.com/MahAzevedo.png' alt='Mádjan Azevedo' />
+                <img src={imagem} alt={nome} />
             </div>
             <div className='rodape'>
-                <h4>Mádjan Azevedo</h4>
-                <h5>Front-end</h5>
+                <h4>{nome}</h4>
+                <h5>{cargo}</h5>
             </div>
         </div>
     )
@@ -16,3 +16,4 @@ const Colaborador = () => {
 
 export default Colaborador;
 
+//tinha props. antes de nome, cargo, imagem, mas tirei, desestruturei, coloquei direto
