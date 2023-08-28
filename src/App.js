@@ -60,7 +60,7 @@ function App() {
         nome={time.nome} 
         corPrimaria={time.corPrimaria} 
         corSecundaria={time.corSecundaria}
-        colaboradores={colaboradores}
+        colaboradores={colaboradores.filter(colaborador => colaborador.time === time.nome)}
       />)}
       
     </div>
@@ -74,3 +74,8 @@ export default App;
 
 // Os nomes time, Times, Time, não são palavras reservadas, são somentes nomes para pq
 // no figma é um grupo de funcionários, um time, só por isso, poderia ser outros nomes.
+
+// Em "App.js", no colaboradores vamos chamar o métodos filter() e teremos 
+// uma arrow function. O colaborador será o parâmetro e o resultado do booleano 
+// vai nos dizer se levamos ou não esse parâmetro baseado no time 
+// desse colaborador. Ou seja, queremos que o nome do time seja igual ao time.nome.
