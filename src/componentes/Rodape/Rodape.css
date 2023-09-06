@@ -1,0 +1,16 @@
+.rodape {
+    background-color: #6278F7;
+    color: #FFFFFF;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.rodape ul li {
+    display: inline-block;
+}

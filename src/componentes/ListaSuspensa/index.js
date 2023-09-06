@@ -21,3 +21,20 @@ export default ListaSuspensa;
 // retorne uma option
 
 // map usa muito 
+
+
+// {props.itens.map(item => <option key={item}>{item}</option>)}  
+// {props.itens.map(item => <option>{item}</option>)}
+// {props.itens.map(item => {return<option>{item}</option>})}
+// São a mesma coisa, mas de forma diferente de escrever, no segundo vc consegue ver o 
+// returna opção item a ser escolhido de forma mais intuitiva qua no de cima
+// mas, depois que vc entende vc passa a ver, opção retorna item  
+
+//  key={item} -> isso aqui é a key/chave para a renderização funcionar bem, adicionei 
+//  ao lado do option
+
+// escolhi a mais tradicional, apagar a outra 
+
+
+
+

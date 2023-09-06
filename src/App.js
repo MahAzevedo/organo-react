@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Banner from './componentes/Banner';
 import Formulario from './componentes/Formulario';
 import Time from './componentes/Time';
+import Rodape from './componentes/Rodape';
 
 function App() {
 
@@ -62,6 +63,8 @@ function App() {
         corSecundaria={time.corSecundaria}
         colaboradores={colaboradores.filter(colaborador => colaborador.time === time.nome)}
       />)}
+
+      <Rodape />
       
     </div>
   );
@@ -79,3 +82,11 @@ export default App;
 // uma arrow function. O colaborador será o parâmetro e o resultado do booleano 
 // vai nos dizer se levamos ou não esse parâmetro baseado no time 
 // desse colaborador. Ou seja, queremos que o nome do time seja igual ao time.nome.
+
+// esse index.js aqui, seria o "bootstrap" da nossa aplicação,
+// é o ponto de entrada, é aqui que a coisa começa, o primeiro
+// arquivo que vai ser executado é essa cara aqui, o index.js aqui, 
+// que vai renderizar o primeiro componente, e vai fazendo
+// isso em cascata
+
+// <React.StrictMode> é esse aqui que ajuda a ver os erros
