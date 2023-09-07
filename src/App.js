@@ -90,3 +90,4 @@ export default App;
 // isso em cascata
 
 // <React.StrictMode> é esse aqui que ajuda a ver os erros
+
