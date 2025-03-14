@@ -19,7 +19,7 @@ const CampoTexto = (props) => {
 }
 
 export default CampoTexto;
- //let valor = 'Mádjan'
+ //let valor = 'Madi'
 
 //const [valor, setValor] = useState('')
 
